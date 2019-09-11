@@ -32,14 +32,14 @@ namespace PaymentResults
                     cxmAPIKey = Environment.GetEnvironmentVariable("cxmAPIKeyLive");
                     cxmUser = Environment.GetEnvironmentVariable("cxmLiveUser");
                     cxmPassword = Environment.GetEnvironmentVariable("cxmLivePassword");
-                    paymentConfirmation = "https://mycouncil-stage.northampton.digital/intranet/parkingPaymentConfirmation.html";
+                    paymentConfirmation = Environment.GetEnvironmentVariable("confirmationPageLive");
                     break;
                 default:
                     cxmEndPoint = Environment.GetEnvironmentVariable("cxmEndPointTest");
                     cxmAPIKey = Environment.GetEnvironmentVariable("cxmAPIKeyTest");
                     cxmUser = Environment.GetEnvironmentVariable("cxmTestUser");
                     cxmPassword = Environment.GetEnvironmentVariable("cxmTestPassword");
-                    paymentConfirmation = "https://mycouncil-stage.northampton.digital/intranet/parkingPaymentConfirmation.html";
+                    paymentConfirmation = Environment.GetEnvironmentVariable("confirmationPageTest");
                     break;
             }
 

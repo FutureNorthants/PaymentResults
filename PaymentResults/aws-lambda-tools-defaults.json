@@ -17,5 +17,6 @@
     "function-name"        : "PaymentResults",
     "function-role"        : "arn:aws:iam::898823515462:role/lambdaMyCouncil",
     "tracing-mode"         : "Active",
-    "environment-variables" : ""
+    "environment-variables" : "",
+    "dead-letter-target-arn" : "arn:aws:sqs:eu-west-1:898823515462:PaymentResultsDLQ"
 }
